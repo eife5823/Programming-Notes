@@ -9,7 +9,8 @@
 8. jQuery.extend 與 jQuery.fn.extend 的區別？
 9. 請講述前端跨域問題產生及解決方法？
 10. 請輸入以下代碼輸出的是什麼？為什麼？
-var a = 1;
+
+```var a = 1;
 function fn(){
   console.log(a);
   var a = 5;
@@ -28,7 +29,7 @@ fn();
 console.log(a);
 a = 10;
 console.log(a);
-console.log(b);
+console.log(b);```
 
 # Shared by Lin 
 1. inline elements 和 block-level elements 各有哪些？差異為何？
@@ -39,7 +40,7 @@ console.log(b);
 4. 請列舉前端性能優化的方法。
 5. 請舉例描述 es6 新的特性另請解釋 promise。
 6. 請寫出下面 js 的輸出
- 6-1
+ ```6-1
   for(var i=1; i<5; i++){
     setTimeout(function() {
       console.log(i);
@@ -88,7 +89,7 @@ console.log(b);
   console.log(test());
   6-6
   請用 JS 寫出能計算婓波那契數列（Fibonacci）第 N 個值的函式。
-  (0, 1, 1, 2, 3, 5, 8, 13, 21...)
+  (0, 1, 1, 2, 3, 5, 8, 13, 21...)```
   
 # Shared by Marin
 面試經驗分享（一）
