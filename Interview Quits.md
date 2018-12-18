@@ -29,7 +29,8 @@ fn();
 console.log(a);
 a = 10;
 console.log(a);
-console.log(b);```
+console.log(b);
+```
 
 # Shared by Lin 
 1. inline elements 和 block-level elements 各有哪些？差異為何？
@@ -89,7 +90,8 @@ console.log(b);```
   console.log(test());
   6-6
   請用 JS 寫出能計算婓波那契數列（Fibonacci）第 N 個值的函式。
-  (0, 1, 1, 2, 3, 5, 8, 13, 21...)```
+  (0, 1, 1, 2, 3, 5, 8, 13, 21...)
+  ```
   
 # Shared by Marin
 面試經驗分享（一）
