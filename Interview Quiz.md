@@ -206,3 +206,86 @@ var imgUrl = 'http://someimages.com/i.png';
 ### 請用 Singleton 方式實作出一個 `oneadObj` 物件。
 
 ### 請用 Factory Design Pattern 方式實作一個 `oneadObj` 物件。
+
+# Shared by Yuchun
+### 請實作 cacl
+```
+var cacl = multiply(3)
+console.log(cacl(4)) //12
+console.log(cacl(5)) //15
+console.log(cacl(6)) //18
+```
+### 請用高階函數加總 a 的值
+`[{'c':2},{'c':2},{'a':1},{'a':5}] //6`
+
+### 請用 prototype 實作 add, multiply function
+```
+var a = 5
+a.add(3) //8
+a.multply(2) //10
+```
+```
+Q1. 
+var foo = 10
+for(let bar=0, foo=2;bar<foo; bar+=5){
+    foo+=2
+    console.log(foo);
+}
+console.log(foo);
+
+Q2.
+var foo = 10
+for(var bar=0, foo=2;bar<foo; bar+=5){
+    foo+=2
+    console.log(foo);
+}
+console.log(foo);
+
+Q3.
+typeof null
+typeof NaN
+typeof {}
+typeof []
+typeof +'3'
+NaN === NaN
+[] === []
+typeof function(){}
+typeof new Date()
+
+Q4.
+var a = [1,2,3]
+var b = a
+a.push(b)
+console.log(b);
+
+Q5.
+let foo = new Set([1, {bar: 2}, 3])
+console.log(foo.has({bar: 2}));
+
+Q6.
+console.log(100);
+setTimeout(function(){
+    Promise.resolve().then(()=>console.log(200))
+    console.log(300)},10)
+console.log(400);
+
+Q7.
+console.log(
+    [5,5,5,5,5]
+    .map((v,i)=>v+i)
+    .filter((v,i)=>v%2)
+    .reduce(function(sum, v, i){return sum+v+i}.bind(0, 1), 0)
+);
+
+Q8.
+console.log('hello world'.replace(/l/,'L').replace(/$$$/g),'$$$$');($$$是指一些代號)
+```
+1. 在瀏覽器小於 400px 時把所有 img 標籤隱藏
+2. 排序 padding, margin, border 由外至內
+3. 解釋 event bubbling, event capturing 及其運作
+4. rem, em 差別; vw, vh, vmin, vmax 差別
+5. redux 是什麼？ redux 的優點？ jQuery 和 React 的差別?
+6. 對模組化開發, 元件的解釋
+7. 對 functional programming 的感覺
+8. 對 design pattern 的認識
+9. 覺得 cookie 和 WebSocket(?) 哪個好
