@@ -60,3 +60,19 @@ function pc (arr1, arr2) {
 
 console.log(pc(['ab', 'cd', 'ef'], [1, 4, 5])); //ad
 ```
+### 白飯
+```
+function pd (arr) {
+  let len = arr.length; // 學生數量
+  let sum = 0; 
+  for (var i=0; i<len; i++) {
+    sum += arr[i]; // 學生總分   
+  }
+  let ave = sum / len; // 平均分數
+  let newArr = arr.filter(function(score){ // 利用 filter 產生低於平均分數的新陣列
+    return (score < ave)
+  }) 
+  return newArr.length;  
+}
+console.log(pd([1, 3, 5])); // 1 => 低於平均分數的為 1 人
+```
