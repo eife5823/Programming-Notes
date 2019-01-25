@@ -45,3 +45,18 @@ function add(a, b) {
   return result.reverse().join('');
 }  
 ```
+### 打不倒的空氣人
+```
+function pc (arr1, arr2) {
+  let newArr = arr1.join('').split(''); // ["a", "b", "c", "d", "e", "f"]
+  let len = arr2.length
+  let result = ""; //結果是一個字串，要注意在迴圈外面宣告
+  for (var i=0; i<len; i++) {
+    var index = arr2[i]-1; // 0 3    
+    result += newArr[index]; // 每跑完一圈就將字母放進 result 裡   
+  }
+  return result;     
+}
+
+console.log(pc(['ab', 'cd', 'ef'], [1, 4, 5])); //ad
+```
