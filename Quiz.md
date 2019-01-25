@@ -76,3 +76,39 @@ function pd (arr) {
 }
 console.log(pd([1, 3, 5])); // 1 => 低於平均分數的為 1 人
 ```
+### 友好數 
+```
+/* 找出 n 的友好數 */
+
+function pe (n) {
+  let arrN = [];
+  let arrM = [];
+  let sumN = 0; 
+  let sumM = 0;
+  
+  for(let i=1; i<n; i++) {
+    if (n % i === 0) {
+      arrN.push(i); // n 的真因數陣列 
+    } 
+  }
+  for(let i=0; i<arrN.length; i++) {
+    sumN += arrN[i]; // n 的真因數總和 
+  }
+  for(let i=1; i<sumN; i++) {
+    if (sumN % i === 0) {
+      arrM.push(i); // m 的真因數陣列（這邊有點 tricky, 預設的結果 n 的真因數總和就是 m, 所以找出 sumN 的真因數）
+    }
+  }
+  for(let i=0; i<arrM.length; i++) {
+    sumM += arrM[i]; // m 的真因數總和 
+  }
+  if(n === sumN){
+    return "=" + n
+  } else if (n === sumM && n <= 1000000) {
+    return sumN.toString()
+  } else return "0"
+ }
+console.log(pe(6))
+console.log(pe(7))
+console.log(pe(2620))
+```
